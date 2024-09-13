@@ -13,7 +13,7 @@ contract SimpleStorage {
 
     mapping(string => uint256) public nameToNumber;
 
-    function addPersons(uint _num, string memory _name) public {
+    function addPersons(uint256 _num, string memory _name) public {
         listOfPeople.push(Persons(_num, _name));
         nameToNumber[_name] = _num;
     }
